@@ -51,5 +51,15 @@
     </li>
   </ul>
 </nav>
+
+<script>
+  const links = document.querySelectorAll('.nav-link');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(link => link.classList.remove('is-active'))
+      link.classList.add('is-active');
+    })
+  })
+</script>
 </body>
 </html>
